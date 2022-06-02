@@ -1,0 +1,157 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    outline:none;
+    font-family:'poppins', sans-serif;
+}
+
+body{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#warning{
+    background-color: red;
+    color: white;
+    display: none;
+    margin-bottom: 10px;
+}
+#warning p{
+    padding: 10px;
+}
+#success{
+    background-color: rgba(40, 241, 0, 0.712);
+    color: white;
+    display: none;
+    margin-bottom: 10px;
+}
+#success p{
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.form{
+    width:350px;
+    background:#fff;
+    padding:15px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.form .mail{
+    height:40px;
+    width:100%;
+    position:relative;
+    margin-bottom: 20px;
+}
+.btn-div,.facebook,.snapchat,.insta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.facebook,.snapchat,.insta{
+    margin-left: 35px;
+}
+.btn{
+
+    border: none;
+    color: white;
+    background: skyblue;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-family: var(--Livvic);
+    font-size: 17px;
+    cursor: pointer;
+}
+.form .mail input{
+    height:100%;
+    width:100%;
+    border:none;
+    font-size:15px;
+    border-bottom: 2px solid black;
+}
+.mail input:focus ~  label,
+.mail input:valid ~  label{
+    transform:translateY(-20px);
+    font-size:17px;
+}
+.form .mail label{
+    position:absolute;
+    bottom:10px;
+    left:0px;
+    color:grey;
+    pointer-events:none;
+    transition:all 0.3s ease;
+}
+.form .mail .underline {
+    position:absolute;
+    bottom:0px;
+    height:2px;
+    width:100%;
+}
+.mail .underline:before{
+    position:absolute;
+    content:"";
+    height:100%;
+    width:100%;
+    background: skyblue;
+    transform:scaleX(0);
+    transition: transform 0.3s ease;
+}
+.mail input:focus ~  .underline:before,
+.mail input:valid ~  .underline:before{
+    transform: scaleX(1);
+}
+.or{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    margin: 15px;
+}
+hr{
+    width: 100px;
+    margin: 5px;
+}
+.facebook{
+    width: 250px;
+    border-radius: 50px;
+    background-color: rgb(24, 119, 250.90);
+    margin-bottom: 10px;
+}
+i,a{
+    padding: 5px 10px;
+}
+.fa-facebook-f{
+    color: white;
+    margin-right: 5px;
+    font-size: 20px;
+}
+.snapchat{
+    width: 250px;
+    border-radius: 50px;
+    background-color: #FFFC00;
+}
+.fa-snapchat-square{
+    color: #FFFC00;
+    margin-right: 10px;
+}
+.insta{
+    width: 250px;
+    border-radius: 50px;
+    background-color: rgb(193, 53, 132);
+    margin-bottom: 10px;
+}
+.instagram{
+    font-size: 20px;
+}
+svg{
+    height: 30px;
+    padding: 5px 10px;
+}

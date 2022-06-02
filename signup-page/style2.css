@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.error{
+    width: 350px;
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%,-50%);
+}
+.error .icon{
+    text-align: center;
+    color: red;
+    margin-bottom: 20px;
+}
+.error .icon i{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.msg{
+    margin-bottom: 15px;
+}
+.msg-2{
+    margin-bottom: 50px;
+}
